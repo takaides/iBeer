@@ -1,0 +1,247 @@
+/*
+
+FONTS:
+
+'Josefin Sans'
+'Noto Serif'
+'Dancing Script'
+
+COLORS:
+
+light tan: #eeebda
+
+*/
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: 'Noto Serif', serif;
+  line-height: 1.8;
+  margin: 0;
+  background-color: #eeebda;
+}
+
+h1, h2, h3 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto 3.5em;
+  /*
+        TODO:
+        - Center up the page
+        - Create a flexbox containerer for
+        the major page sections
+    */
+}
+
+#site-header {
+  /*
+        TODO
+        - Flexbox property here
+    */
+}
+
+#site-header div {
+  text-align: center;
+  padding: 60px 0 120px 0;
+  font-size: 4em;
+  background-image: url("./img/header-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*
+        TODO:
+        - Add a background image "header-img.jpg"
+        make sure that the path to the image is correct
+    */
+  background-size: cover;
+  background-position: right bottom;
+}
+
+#site-header div h1, #site-header div h3 {
+  margin: 0;
+  line-height: 1;
+  position: relative;
+}
+
+#site-header div h1 {
+  top: 20px;
+}
+
+#site-header div h3 {
+  color: white;
+  bottom: 20px;
+  text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3);
+  font-family: "Dancing Script", cursive;
+  /*
+        TODO:
+        - Use the script font: 'Dancing Script' fot this text
+    */
+}
+
+#main-navigation {
+  display: flex;
+  background: #444;
+  flex-flow: row;
+  align-items: flex-end;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-around;
+  /*
+        TODO:
+        - Use Flexbox to arrange the navigation links
+    */
+}
+
+#main-navigation a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-align: right;
+  box-sizing: border-box;
+  /*
+        TODO:
+        - Flexbox - Create general spacing between nav links
+    */
+}
+
+#main-navigation #logo {
+  margin-right: 450px;
+  /*
+        TODO:
+        - Flexbox - The logo needs to take up more space
+        that the other links
+    */
+}
+
+.blog {
+  display: flex;
+  width: 90%;
+  margin: -3.5em auto 0;
+}
+
+main {
+  padding: 20px;
+  background-color: #444;
+  box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3);
+  /*
+        TODO:
+        - Flexbox: Set the starting width of this element
+        - Use relative positioning to bump this upward
+    */
+  width: 70%;
+  box-sizing: border-box;
+  align-self: flex-start;
+}
+
+aside {
+  padding: 20px;
+  background-color: #eee;
+  box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3);
+  /*
+        TODO:
+        - Flexbox: Set the starting width of this element
+        - Use relative positioning to bump this upward
+    */
+  width: 30%;
+  box-sizing: border-box;
+}
+
+aside h3 {
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+aside img {
+  border-radius: 50%;
+  margin-bottom: 30px;
+  border: 2px solid white;
+}
+
+article {
+  background-color: white;
+  box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+article h2 {
+  line-height: 1em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+}
+
+article time {
+  font-size: 0.8em;
+  text-align: center;
+  display: block;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+article img {
+  /*
+        TODO:
+        - Float article images to the right
+        and match sizes and spacing to the mockup
+    */
+  display: inline-block;
+  width: 45%;
+  /*align-self: flex-end;*/
+  float: right;
+  margin: 1em;
+}
+
+article p {
+
+}
+
+article footer p {
+  /*
+        TODO:
+        - Style the article footer
+        HINT: Look to the article header;
+    */
+  display: block;
+  text-align: center;
+  margin: .5rem 0 0 0;
+  padding: 1.2rem 0 0 0;
+  border-top: 1px solid #ccc;
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+#site-footer {
+  background: #333;
+  /*
+        TODO:
+        - Style the site footer
+    */
+  color: white;
+  display: block;
+  text-align: center;
+}
